@@ -7,6 +7,10 @@ const ActivitySchema = new mongoose.Schema({
     horario_fim: String,
     lembrar: Boolean,
     feito: Boolean,
+    usuario_id: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    }
 }, {
 	timestamps: true,
 });
