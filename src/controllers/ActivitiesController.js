@@ -4,7 +4,7 @@ module.exports = {
     async index(request, response) {
         let activities = [];
 
-        activities = await Activity.find();
+        activities = await Activity.find().populate('categoria_id');
      
         return response.json(activities);
     },
@@ -16,7 +16,8 @@ module.exports = {
             horario_inicio,
             horario_fim,
             lembrar,
-            feito
+            feito,
+            categoria_id
         } = request.body;
 
         const activity = await Activity.create({
@@ -25,7 +26,8 @@ module.exports = {
             horario_inicio,
             horario_fim,
             lembrar,
-            feito
+            feito,
+            categoria_id
         });
 
         return response.json(activity);

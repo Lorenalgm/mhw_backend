@@ -1,7 +1,6 @@
 const express = require('express');
 
 const ActivitiesController = require('./controllers/ActivitiesController');
-const ActivitiesCategoryController = require('./controllers/ActivitiesCategoryController');
 const ActivitiesPersonController = require('./controllers/ActivitiesPersonController');
 const CategoryController = require('./controllers/CategoryController');
 const CoinController = require('./controllers/CoinController');
@@ -14,9 +13,6 @@ const routes = express.Router();
 
 routes.get('/activities', ActivitiesController.index);
 routes.post('/activities', ActivitiesController.store);
-
-routes.get('/activities_categories', ActivitiesCategoryController.index);
-routes.post('/activities_categories', ActivitiesCategoryController.store);
 
 routes.get('/activities_persons', ActivitiesPersonController.index);
 routes.post('/activities_persons', ActivitiesPersonController.store);

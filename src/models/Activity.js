@@ -10,6 +10,10 @@ const ActivitySchema = new mongoose.Schema({
     usuario_id: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
+    },
+    categoria_id: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Category'
     }
 }, {
 	timestamps: true,
