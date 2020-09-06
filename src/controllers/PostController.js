@@ -14,14 +14,16 @@ module.exports = {
             titulo,
             descricao,
             destacar,
-            categoria_id
+            categoria_id,
+            usuario_id
         } = request.body;
 
         const post = await Post.create({
             titulo,
             descricao,
             destacar,
-            categoria_id
+            categoria_id,
+            usuario_id
         });
 
         return response.json(post);

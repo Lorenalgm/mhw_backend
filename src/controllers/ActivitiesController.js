@@ -17,7 +17,9 @@ module.exports = {
             horario_fim,
             lembrar,
             feito,
-            categoria_id
+            categoria_id,
+            usuario_id,
+            pessoa_id
         } = request.body;
 
         const activity = await Activity.create({
@@ -27,7 +29,9 @@ module.exports = {
             horario_fim,
             lembrar,
             feito,
-            categoria_id
+            categoria_id,
+            usuario_id,
+            pessoa_id
         });
 
         return response.json(activity);

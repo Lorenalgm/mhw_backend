@@ -11,11 +11,13 @@ module.exports = {
 
     async store(request, response){
         const {
-            nome
+            nome,
+            usuario_id
         } = request.body;
 
         const person = await Person.create({
-            nome
+            nome,
+            usuario_id
         });
 
         return response.json(person);

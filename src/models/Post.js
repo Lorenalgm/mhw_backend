@@ -7,6 +7,10 @@ const PostSchema = new mongoose.Schema({
     categoria_id: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Category'
+    },
+    usuario_id: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
     }
 }, {
 	timestamps: true,
