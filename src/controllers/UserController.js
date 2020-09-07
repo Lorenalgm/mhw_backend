@@ -11,11 +11,13 @@ module.exports = {
 
     async store(request, response){
         const {
-            nome
+            nome,
+            foto_url
         } = request.body;
 
         const user = await User.create({
-            nome
+            nome,
+            foto_url
         });
 
         return response.json(user);
