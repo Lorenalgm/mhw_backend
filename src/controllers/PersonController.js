@@ -1,4 +1,4 @@
-const Person = require('../models/User');
+const Person = require('../models/Person');
 
 module.exports = {
     async index(request, response) {
