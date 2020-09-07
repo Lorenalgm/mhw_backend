@@ -14,6 +14,7 @@ routes.post('/users', UserController.store);
 
 routes.get('/activities', ActivitiesController.index);
 routes.post('/activities', ActivitiesController.store);
+routes.put('/activities/:id', ActivitiesController.update);
 
 routes.get('/categories', CategoryController.index);
 routes.post('/categories', CategoryController.store);

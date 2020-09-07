@@ -36,4 +36,16 @@ module.exports = {
 
         return response.json(activity);
     },
+
+    async update(request, response){
+        const {id} = request.params;
+        
+        const {feito} = request.body;
+
+        const activity = await Activity.findById(id);
+        
+        await activity.updateOne(request.body);
+
+        return response.json(activity);
+    },
 }
