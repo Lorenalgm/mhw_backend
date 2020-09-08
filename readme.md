@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <h1 align="center">Mulherzona</h1>
+    <img alt="Logo" title="#logo" width="300px" src="https://github.com/carolquiterio/mhw/raw/master/github/logo.png">
 
   <p align="center">    
      Backend do aplicativo para gerenciamento de tarefas e comunidade de mulheres empreendedoras
@@ -47,7 +47,15 @@ git@github.com:Lorenalgm/mhw_backend.git
     yarn dev
 ```
 
+ O frontend poderá ser acesso no repositório: https://github.com/carolquiterio/mhw
+
 ## :mailbox_with_no_mail: Contatos
-Linkedin: https://www.linkedin.com/in/lorenagmontes/
+<h4 align="center">
+    Feito com 💜 por <a href="www.linkedin.com/in/camillepaixao" target="_blank">Camille</a>, 
+    <a href="https://www.linkedin.com/in/carolina-quiterio-978419188/" target="_blank">Carol</a>, 
+    <a href="https://www.linkedin.com/in/gabrieli-pavlack-22b5711ab/" target="_blank">Gabrielli</a>, 
+    <a href="https://www.linkedin.com/in/mishelle-sousa-3b8159135/" target="_blank">Lorena</a> e 
+    <a href="https://br.linkedin.com/in/sthefannebatista" target="_blank">Sthefanne</a>
+</h4>
 
    
